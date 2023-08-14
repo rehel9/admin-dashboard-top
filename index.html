@@ -7,60 +7,85 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <h1>Dashboard</h1>
-      <ul>
+    <nav class="dashboard-menu">
+      <h1 class="margin-5px">Dashboard</h1>
+      <ul class="user-menu">
         <li><img src="" alt="" />Home</li>
-        <li><img src="" alt="" />Profi</li>
+        <li><img src="" alt="" />Profile</li>
         <li><img src="" alt="" />Messages</li>
         <li><img src="" alt="" />History</li>
         <li><img src="" alt="" />Tasks</li>
         <li><img src="" alt="" />Communities</li>
       </ul>
-      <ul>
+      <ul class="user-menu">
         <li><img src="" alt="" />Settings</li>
         <li><img src="" alt="" />Support</li>
         <li><img src="" alt="" />Privacy</li>
       </ul>
     </nav>
-    <main>
-      <div>
+    <main class="main-window">
+      <div class="main-bar padding-10px">
         <!-- Search bar and user management -->
-        <div>
-          <div>
-            <img src="" alt="Signo de Busqueda" />
+        <div class="flex">
+          <div class="search-bar flex">
+            <img
+              src="./imgs/searchbar/search.svg"
+              alt="Search"
+              width="20rem"
+              height="20rem"
+            />
             <input type="search" name="search" id="search" />
           </div>
-          <div>
-            <img src="" alt="Notificacion" />
+          <div class="flex">
+            <img
+              src="./imgs/searchbar/bell-outline.svg"
+              alt="Notificacion"
+              width="15rem"
+              height="15rem"
+            />
             <img src="" alt="Imagen de Usuario" />
             <p>Luis Leonardo</p>
           </div>
         </div>
-        <div>
-          <div>
+        <div class="user-management flex">
+          <div class="flex">
             <img src="" alt="Imagen de Usuario" />
             <div>
               <p>Hi there,</p>
               <p>Luis Leonardo (@leole)</p>
             </div>
           </div>
-          <div>
+          <div class="creation-buttons flex">
             <button>New</button>
             <button>Upload</button>
             <button>Share</button>
           </div>
         </div>
+        <!-- The section ends-->
       </div>
-      <div>
-        <div>
-          <!-- Main dashboard -->
+      <div class="main-grid">
+        <!-- Main dashboard -->
+        <div class="grid-column-1">
           <h2>Your projects</h2>
-          <div>
+          <div class="card-grid">
             <div class="card">
               <div>
-                <h2></h2>
-                <p></p>
+                <h2>Maple Dot</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                  debitis fugiat quaerat facilis repudiandae.
+                </p>
+              </div>
+              <div class="contra-card">
+                <button><img src="" alt="" /></button>
+                <button><img src="" alt="" /></button>
+                <button><img src="" alt="" /></button>
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <h2>Iper Maple</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div>
                 <button><img src="" alt="" /></button>
@@ -70,8 +95,8 @@
             </div>
             <div class="card">
               <div>
-                <h2></h2>
-                <p></p>
+                <h2>Naca Maple toca</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               </div>
               <div>
                 <button><img src="" alt="" /></button>
@@ -81,8 +106,8 @@
             </div>
             <div class="card">
               <div>
-                <h2></h2>
-                <p></p>
+                <h2>Caca poca nuca Mapa</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div>
                 <button><img src="" alt="" /></button>
@@ -92,8 +117,11 @@
             </div>
             <div class="card">
               <div>
-                <h2></h2>
-                <p></p>
+                <h2>Cachis maple coca</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Delectus optio perferendis, commodi exercitationem animi.
+                </p>
               </div>
               <div>
                 <button><img src="" alt="" /></button>
@@ -103,19 +131,11 @@
             </div>
             <div class="card">
               <div>
-                <h2></h2>
-                <p></p>
-              </div>
-              <div>
-                <button><img src="" alt="" /></button>
-                <button><img src="" alt="" /></button>
-                <button><img src="" alt="" /></button>
-              </div>
-            </div>
-            <div class="card">
-              <div>
-                <h2></h2>
-                <p></p>
+                <h2>Hoca pochonki nanoca</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Atque, illum excepturi similique possimus eveniet.
+                </p>
               </div>
               <div>
                 <button><img src="" alt="" /></button>
@@ -125,24 +145,27 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="grid-column-2">
           <h2>Announcements</h2>
           <div>
             <div class="announcement-card">
-              <h3></h3>
-              <p></p>
+              <h3>Alamae Mopo</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                quam doloremque nostrum voluptatem? Nesciunt.
+              </p>
             </div>
             <div class="announcement-card">
-              <h3></h3>
-              <p></p>
+              <h3>Caqui poco</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="announcement-card">
-              <h3></h3>
-              <p></p>
+              <h3>Poqui Moqui caca</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
         </div>
-        <div>
+        <div class="grid-column-2">
           <h2>Trending</h2>
           <div>
             <div>
@@ -175,6 +198,7 @@
             </div>
           </div>
         </div>
+        <!-- Section end -->
       </div>
     </main>
   </body>
